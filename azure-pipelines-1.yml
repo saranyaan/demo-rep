@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  name: Default
+
+steps:
+  - script: |
+      python app1.py
+    displayName: "Run Python Script"
+
+  - script: echo "Build Completed!"
+    displayName: "Build Step"
+
+  - script: echo "Deploying Application..."
+    displayName: "Deploy Step"
+
