@@ -11,7 +11,7 @@ pool:
 
 steps:
   - script: |
-      python app.py
+      python app1.py
     displayName: "Run Python Script"
 
   - script: echo "Build Completed!"
