@@ -9,13 +9,3 @@ trigger:
 pool:
   name: Default
 
-steps:
-  - script: |
-      python app1.py
-    displayName: "Run Python Script"
-
-  - script: echo "Build Completed!"
-    displayName: "Build Step"
-
-  - script: echo "Deploying Application..."
-    displayName: "Deploy Step"
